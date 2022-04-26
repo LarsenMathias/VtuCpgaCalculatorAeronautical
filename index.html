@@ -207,7 +207,60 @@
             if (EVS<50 && EVS>=45){
                 EVS=5;
             }
-            
+            if (ME<45 && ME>=40){
+                ME=4;
+            }
+            if (Ad2<45 && Ad2>=40){
+                Ad2=4;
+            }
+            if (As<45 && As>=40){
+                As=4;
+            }
+            if (ICM<45 && ICM>=40){
+                ICM=4;
+            }
+            if (ASI>45 && ASI>=40){
+                ASI=4;
+            }
+            if (TOV<45 && TOV>=40){
+                TOV=4;
+            }
+            if (AdLab<45 && AdLab>=40){
+                AdLab=4;
+            }
+            if (ECandFM<45 && ECandFM>=40){
+                ECandFM=4;
+            }
+            if (EVS<45 && EVS>=40){
+                EVS=4;
+            }
+            if (ME<40){
+                ME=0;
+            }
+            if (Ad2<40){
+                Ad2=0;
+            }
+            if (As<40){
+                As=0;
+            }
+            if (ICM<40){
+                ICM=0;
+            }
+            if (ASI<40){
+                ASI=0;
+            }
+            if (TOV<40){
+                TOV=0;
+            }
+            if (AdLab<40){
+                AdLab=0;
+            }
+            if (ECandFM<40){
+                ECandFM=0;
+            }
+            if (EVS<40){
+                EVS=0;
+            }
             result=(ME*grade1+Ad2*grade2+As*grade3+ICM*grade4+ASI*grade5+TOV*grade6+AdLab*grade7+ECandFM*grade8+EVS*grade9)/24;
             document.getElementById("result").innerHTML="the cgpa is "+result;
         }
