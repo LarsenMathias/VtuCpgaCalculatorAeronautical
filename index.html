@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>vtuCalci</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="inputarea">
+                <input type="text" placeholder="M&E" id="M&E" onfocus="this.value=''">
+                <input type="text" placeholder="Ad2" id="Ad2" onfocus="this.value=''">
+                <input type="text" placeholder="As-1" id="As-1" onfocus="this.value=''">
+                <input type="text" placeholder="ICM" id="ICM" onfocus="this.value=''">
+                <input type="text" placeholder="AS&I" id="AS&I" onfocus="this.value=''">
+                <input type="text" placeholder="TOV" id="TOV" onfocus="this.value=''">
+                <input type="text" placeholder="AdLab" id="AdLab" onfocus="this.value=''">
+                <input type="text" placeholder="ECandFM" id="ECandFM" onfocus="this.value=''">
+                <input type="text" placeholder="EVS" id="EVS" onfocus="this.value=''">
+            </div>
+            <a href="#" onclick=cgpa()>Calculate</a>
+            <p id="result">Your cgpa is </p>
+        </div>
+    </div>
+    <script>
+        function cgpa(){
+            var ME=document.getElementById("M&E").value
+            var Ad2=document.getElementById("Ad2").value
+            var As=document.getElementById("As-1").value
+            var ICM=document.getElementById("ICM").value
+            var ASI=document.getElementById("AS&I").value
+            var TOV=document.getElementById("TOV").value
+            var AdLab=document.getElementById("AdLab").value
+            var ECandFM=document.getElementById("ECandFM").value
+            var EVS=document.getElementById("EVS").value
+            var grade1=3;
+            var grade2=4;
+            var grade3=3;
+            var grade4=3;
+            var grade5=3;
+            var grade6=3;
+            var grade7=2;
+            var grade8=2;
+            var grade9=1;
+            if (ME>90){
+                ME=10;
+            }
+            if (Ad2>90){
+                Ad2=10;
+            }
+            if (As>90){
+                As=10;
+            }
+            if (ICM>90){
+                ICM=10;
+            }
+            if (ASI>90){
+                ASI=10;
+            }
+            if (TOV>90){
+                TOV=10;
+            }
+            if (AdLab>90){
+                AdLab=10;
+            }
+            if (ECandFM>90){
+                ECandFM=10;
+            }
+            if (EVS>90){
+                EVS=10;
+            }
+            result=(ME*grade1+Ad2*grade2+As*grade3+ICM*grade4+ASI*grade5+TOV*grade6+AdLab*grade7+ECandFM*grade8+EVS*grade9)/24;
+            document.getElementById("result").innerHTML="the cgpa is "+result;
+        }
+    </script>
+</body>
+</html>
