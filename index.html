@@ -72,6 +72,142 @@
             if (EVS>90){
                 EVS=10;
             }
+            if (ME<90 && ME>=80){
+                ME=9;
+            }
+            if (Ad2<90 && Ad2>=80){
+                Ad2=9;
+            }
+            if (As<90 && As>=80){
+                As=9;
+            }
+            if (ICM<90 && ICM>=80){
+                ICM=9;
+            }
+            if (ASI>90 && ASI>=80){
+                ASI=9;
+            }
+            if (TOV<90 && TOV>=80){
+                TOV=9;
+            }
+            if (AdLab<90 && AdLab>=80){
+                AdLab=9;
+            }
+            if (ECandFM<90 && ECandFM>=80){
+                ECandFM=9;
+            }
+            if (EVS<90 && EVS>=80){
+                EVS=9;
+            }
+            if (ME<80 && ME>=70){
+                ME=8;
+            }
+            if (Ad2<80 && Ad2>=70){
+                Ad2=8;
+            }
+            if (As<80 && As>=70){
+                As=8;
+            }
+            if (ICM<80 && ICM>=70){
+                ICM=8;
+            }
+            if (ASI>80 && ASI>=70){
+                ASI=8;
+            }
+            if (TOV<80 && TOV>=70){
+                TOV=8;
+            }
+            if (AdLab<80 && AdLab>=70){
+                AdLab=8;
+            }
+            if (ECandFM<80 && ECandFM>=70){
+                ECandFM=8;
+            }
+            if (EVS<80 && EVS>=70){
+                EVS=8;
+            }
+            if (ME<70 && ME>=60){
+                ME=7;
+            }
+            if (Ad2<70 && Ad2>=60){
+                Ad2=7;
+            }
+            if (As<70 && As>=60){
+                As=7;
+            }
+            if (ICM<70 && ICM>=60){
+                ICM=7;
+            }
+            if (ASI>70 && ASI>=60){
+                ASI=7;
+            }
+            if (TOV<70 && TOV>=60){
+                TOV=7;
+            }
+            if (AdLab<70 && AdLab>=60){
+                AdLab=7;
+            }
+            if (ECandFM<70 && ECandFM>=60){
+                ECandFM=7;
+            }
+            if (EVS<70 && EVS>=60){
+                EVS=7;
+            }
+            if (ME<60 && ME>=50){
+                ME=6;
+            }
+            if (Ad2<60 && Ad2>=50){
+                Ad2=6;
+            }
+            if (As<60 && As>=50){
+                As=6;
+            }
+            if (ICM<60 && ICM>=50){
+                ICM=6;
+            }
+            if (ASI>60 && ASI>=50){
+                ASI=6;
+            }
+            if (TOV<60 && TOV>=50){
+                TOV=6;
+            }
+            if (AdLab<60 && AdLab>=50){
+                AdLab=6;
+            }
+            if (ECandFM<60 && ECandFM>=50){
+                ECandFM=6;
+            }
+            if (EVS<60 && EVS>=50){
+                EVS=6;
+            }
+            if (ME<50 && ME>=45){
+                ME=5;
+            }
+            if (Ad2<50 && Ad2>=45){
+                Ad2=5;
+            }
+            if (As<50 && As>=45){
+                As=5;
+            }
+            if (ICM<50 && ICM>=45){
+                ICM=5;
+            }
+            if (ASI>50 && ASI>=45){
+                ASI=5;
+            }
+            if (TOV<50 && TOV>=45){
+                TOV=5;
+            }
+            if (AdLab<50 && AdLab>=45){
+                AdLab=5;
+            }
+            if (ECandFM<50 && ECandFM>=45){
+                ECandFM=5;
+            }
+            if (EVS<50 && EVS>=45){
+                EVS=5;
+            }
+            
             result=(ME*grade1+Ad2*grade2+As*grade3+ICM*grade4+ASI*grade5+TOV*grade6+AdLab*grade7+ECandFM*grade8+EVS*grade9)/24;
             document.getElementById("result").innerHTML="the cgpa is "+result;
         }
