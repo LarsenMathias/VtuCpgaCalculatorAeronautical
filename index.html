@@ -99,6 +99,33 @@
             if (evs<90 && evs>=80){
                 evs=9;
             }
+            if (ME<80 && ME>=70){
+                ME=8;
+            }
+            if (Ad<80 && Ad>=70){
+                Ad=8;
+            }
+            if (As<80 && As>=70){
+                As=8;
+            }
+            if (icm<80 && icm>=70){
+                icm=8;
+            }
+            if (asi<80 && asi>=70){
+                asi=8;
+            }
+            if (tov<80 && tov>=70){
+                tov=8;
+            }
+            if (Adlab<80 && Adlab>=70){
+                Adlab=8;
+            }
+            if (ecandfm<80 && ecandfm>=70){
+                ecandfm=8;
+            }
+            if (evs<80 && evs>=70){
+                evs=8;
+            }
             result=(ME*grade1+Ad*grade2+As*grade3+icm*grade4+asi*grade5+tov*grade6+Adlab*grade7+ecandfm*grade8+evs*grade9)/24;
             document.getElementById("result").innerHTML="the cgpa is "+result;
         }
