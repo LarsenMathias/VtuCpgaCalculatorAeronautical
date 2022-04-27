@@ -27,15 +27,15 @@
     </div>
     <script>
         function cgpa(){
-            var ME=document.getElementById("M&E").value
-            var Ad2=document.getElementById("Ad2").value
-            var As=document.getElementById("As-1").value
-            var ICM=document.getElementById("ICM").value
-            var ASI=document.getElementById("AS&I").value
-            var TOV=document.getElementById("TOV").value
-            var AdLab=document.getElementById("AdLab").value
-            var ECandFM=document.getElementById("ECandFM").value
-            var EVS=document.getElementById("EVS").value
+            var ME=document.getElementById("M&E").value;
+            var Ad2=document.getElementById("Ad2").value;
+            var As=document.getElementById("As-1").value;
+            var ICM=document.getElementById("ICM").value;
+            var ASI=document.getElementById("AS&I").value;
+            var TOV=document.getElementById("TOV").value;
+            var AdLab=document.getElementById("AdLab").value;
+            var ECandFM=document.getElementById("ECandFM").value;
+            var EVS=document.getElementById("EVS").value;
             var grade1=3;
             var grade2=4;
             var grade3=3;
@@ -46,220 +46,220 @@
             var grade8=2;
             var grade9=1;
             if (ME>90){
-                ME=10;
+               ME=10;
             }
-            if (Ad2>90){
-                Ad2=10;
+            if (Ad2.value>90){
+                var Ad2=10;
             }
-            if (As>90){
-                As=10;
+            if (As.value>90){
+                var As=10;
             }
-            if (ICM>90){
-                ICM=10;
+            if (ICM.value>90){
+                var ICM=10;
             }
             if (ASI>90){
-                ASI=10;
+                var ASI=10;
             }
             if (TOV>90){
-                TOV=10;
+                var TOV=10;
             }
             if (AdLab>90){
-                AdLab=10;
+                var AdLab=10;
             }
             if (ECandFM>90){
-                ECandFM=10;
+                var ECandFM=10;
             }
             if (EVS>90){
-                EVS=10;
+                var EVS=10;
             }
-            if (ME<90 && ME>=80){
-                ME=9;
-            }
-            if (Ad2<90 && Ad2>=80){
-                Ad2=9;
-            }
-            if (As<90 && As>=80){
-                As=9;
-            }
-            if (ICM<90 && ICM>=80){
-                ICM=9;
-            }
-            if (ASI>90 && ASI>=80){
-                ASI=9;
-            }
-            if (TOV<90 && TOV>=80){
-                TOV=9;
-            }
-            if (AdLab<90 && AdLab>=80){
-                AdLab=9;
-            }
-            if (ECandFM<90 && ECandFM>=80){
-                ECandFM=9;
-            }
-            if (EVS<90 && EVS>=80){
-                EVS=9;
-            }
-            if (ME<80 && ME>=70){
-                ME=8;
-            }
-            if (Ad2<80 && Ad2>=70){
-                Ad2=8;
-            }
-            if (As<80 && As>=70){
-                As=8;
-            }
-            if (ICM<80 && ICM>=70){
-                ICM=8;
-            }
-            if (ASI>80 && ASI>=70){
-                ASI=8;
-            }
-            if (TOV<80 && TOV>=70){
-                TOV=8;
-            }
-            if (AdLab<80 && AdLab>=70){
-                AdLab=8;
-            }
-            if (ECandFM<80 && ECandFM>=70){
-                ECandFM=8;
-            }
-            if (EVS<80 && EVS>=70){
-                EVS=8;
-            }
-            if (ME<70 && ME>=60){
-                ME=7;
-            }
-            if (Ad2<70 && Ad2>=60){
-                Ad2=7;
-            }
-            if (As<70 && As>=60){
-                As=7;
-            }
-            if (ICM<70 && ICM>=60){
-                ICM=7;
-            }
-            if (ASI>70 && ASI>=60){
-                ASI=7;
-            }
-            if (TOV<70 && TOV>=60){
-                TOV=7;
-            }
-            if (AdLab<70 && AdLab>=60){
-                AdLab=7;
-            }
-            if (ECandFM<70 && ECandFM>=60){
-                ECandFM=7;
-            }
-            if (EVS<70 && EVS>=60){
-                EVS=7;
-            }
-            if (ME<60 && ME>=50){
-                ME=6;
-            }
-            if (Ad2<60 && Ad2>=50){
-                Ad2=6;
-            }
-            if (As<60 && As>=50){
-                As=6;
-            }
-            if (ICM<60 && ICM>=50){
-                ICM=6;
-            }
-            if (ASI>60 && ASI>=50){
-                ASI=6;
-            }
-            if (TOV<60 && TOV>=50){
-                TOV=6;
-            }
-            if (AdLab<60 && AdLab>=50){
-                AdLab=6;
-            }
-            if (ECandFM<60 && ECandFM>=50){
-                ECandFM=6;
-            }
-            if (EVS<60 && EVS>=50){
-                EVS=6;
-            }
-            if (ME<50 && ME>=45){
-                ME=5;
-            }
-            if (Ad2<50 && Ad2>=45){
-                Ad2=5;
-            }
-            if (As<50 && As>=45){
-                As=5;
-            }
-            if (ICM<50 && ICM>=45){
-                ICM=5;
-            }
-            if (ASI>50 && ASI>=45){
-                ASI=5;
-            }
-            if (TOV<50 && TOV>=45){
-                TOV=5;
-            }
-            if (AdLab<50 && AdLab>=45){
-                AdLab=5;
-            }
-            if (ECandFM<50 && ECandFM>=45){
-                ECandFM=5;
-            }
-            if (EVS<50 && EVS>=45){
-                EVS=5;
-            }
-            if (ME<45 && ME>=40){
-                ME=4;
-            }
-            if (Ad2<45 && Ad2>=40){
-                Ad2=4;
-            }
-            if (As<45 && As>=40){
-                As=4;
-            }
-            if (ICM<45 && ICM>=40){
-                ICM=4;
-            }
-            if (ASI>45 && ASI>=40){
-                ASI=4;
-            }
-            if (TOV<45 && TOV>=40){
-                TOV=4;
-            }
-            if (AdLab<45 && AdLab>=40){
-                AdLab=4;
-            }
-            if (ECandFM<45 && ECandFM>=40){
-                ECandFM=4;
-            }
-            if (EVS<45 && EVS>=40){
-                EVS=4;
-            }
+           
+            // } if (ME>=80 && ME<90){
+            //     var ME=9;
+            // }
+            // if (Ad2>=80 && Ad2<90){
+            //     var Ad2=9;
+            // }
+            // if (As>=80 && As<90){
+            //     var As=9;
+            // }
+            // if (ICM>=80 && ICM<900){
+            //     var ICM=9;
+            // }
+            // if (ASI>90 && ASI<90){
+            //     var ASI=9;
+            // }
+            // if (TOV>=80 && TOV<90){
+            //     var TOV=9;
+            // }
+            // if (AdLab>=80 && AdLab<90){
+            //     var AdLab=9;
+            // }
+            // if (ECandFM>=80 && ECandFM>=80){
+            //     var ECandFM=9;
+            // }
+            // if (EVS>=80 && EVS<90){
+            //     var EVS=9;
+            // }
+            // if (ME<80 && ME>=70){
+            //     var ME=8;
+            // }
+            // if (Ad2<80 && Ad2>=70){
+            //     var Ad2=8;
+            // }
+            // if (As<80 && As>=70){
+            //     var As=8;
+            // }
+            // if (ICM<80 && ICM>=70){
+            //     var ICM=8;
+            // }
+            // if (ASI>80 && ASI>=70){
+            //     var ASI=8;
+            // }
+            // if (TOV<80 && TOV>=70){
+            //     var TOV=8;
+            // }
+            // if (AdLab<80 && AdLab>=70){
+            //     var AdLab=8;
+            // }
+            // if (ECandFM<80 && ECandFM>=70){
+            //     var ECandFM=8;
+            // }
+            // if (EVS<80 && EVS>=70){
+            //     var EVS=8;
+            // }
+            // if (ME<70 && ME>=60){
+            //     var ME=7;
+            // }
+            // if (Ad2<70 && Ad2>=60){
+            //     var Ad2=7;
+            // }
+            // if (As<70 && As>=60){
+            //     var As=7;
+            // }
+            // if (ICM<70 && ICM>=60){
+            //     var ICM=7;
+            // }
+            // if (ASI>70 && ASI>=60){
+            //     var ASI=7;
+            // }
+            // if (TOV<70 && TOV>=60){
+            //     var TOV=7;
+            // }
+            // if (AdLab<70 && AdLab>=60){
+            //     var AdLab=7;
+            // }
+            // if (ECandFM<70 && ECandFM>=60){
+            //     var ECandFM=7;
+            // }
+            // if (EVS<70 && EVS>=60){
+            //     var EVS=7;
+            // }
+            // if (ME<60 && ME>=50){
+            //     var ME=6;
+            // }
+            // if (Ad2<60 && Ad2>=50){
+            //     var Ad2=6;
+            // }
+            // if (As<60 && As>=50){
+            //     var As=6;
+            // }
+            // if (ICM<60 && ICM>=50){
+            //     var ICM=6;
+            // }
+            // if (ASI>60 && ASI>=50){
+            //     var ASI=6;
+            // }
+            // if (TOV<60 && TOV>=50){
+            //     var TOV=6;
+            // }
+            // if (AdLab<60 && AdLab>=50){
+            //     var AdLab=6;
+            // }
+            // if (ECandFM<60 && ECandFM>=50){
+            //     var ECandFM=6;
+            // }
+            // if (EVS<60 && EVS>=50){
+            //     var EVS=6;
+            // }
+            // if (ME<50 && ME>=45){
+            //     var ME=5;
+            // }
+            // if (Ad2<50 && Ad2>=45){
+            //     var Ad2=5;
+            // }
+            // if (As<50 && As>=45){
+            //     var As=5;
+            // }
+            // if (ICM<50 && ICM>=45){
+            //     var ICM=5;
+            // }
+            // if (ASI>50 && ASI>=45){
+            //     var ASI=5;
+            // }
+            // if (TOV<50 && TOV>=45){
+            //     var TOV=5;
+            // }
+            // if (AdLab<50 && AdLab>=45){
+            //     var AdLab=5;
+            // }
+            // if (ECandFM<50 && ECandFM>=45){
+            //     var ECandFM=5;
+            // }
+            // if (EVS<50 && EVS>=45){
+            //     var EVS=5;
+            // }
+            // if (ME<45 && ME>=40){
+            //     var ME=4;
+            // }
+            // if (Ad2<45 && Ad2>=40){
+            //     var Ad2=4;
+            // }
+            // if(As<45 && As>=40){
+            //     var As=4;
+            // }
+            // if (ICM<45 && ICM>=40){
+            //     var ICM=4;
+            // }
+            // if  (ASI>45 && ASI>=40){
+            //     var ASI=4;
+            // }
+            // if (TOV<45 && TOV>=40){
+            //     var TOV=4;
+            // }
+            // if (AdLab<45 && AdLab>=40){
+            //     var AdLab=4;
+            // }
+            // if (ECandFM<45 && ECandFM>=40){
+            //     var ECandFM=4;
+            // }
+            // if (EVS<45 && EVS>=40){
+            //     var EVS=4;
             if (ME<40){
-                ME=0;
+                var ME=0;
             }
             if (Ad2<40){
-                Ad2=0;
+                var Ad2=0;
             }
             if (As<40){
-                As=0;
+                var As=0;
             }
             if (ICM<40){
-                ICM=0;
+                var ICM=0;
             }
             if (ASI<40){
-                ASI=0;
+                var ASI=0;
             }
             if (TOV<40){
-                TOV=0;
+                var TOV=0;
             }
             if (AdLab<40){
-                AdLab=0;
+                var AdLab=0;
             }
             if (ECandFM<40){
-                ECandFM=0;
+                var ECandFM=0;
             }
             if (EVS<40){
-                EVS=0;
+                var EVS=0;
             }
             result=(ME*grade1+Ad2*grade2+As*grade3+ICM*grade4+ASI*grade5+TOV*grade6+AdLab*grade7+ECandFM*grade8+EVS*grade9)/24;
             document.getElementById("result").innerHTML="the cgpa is "+result;
