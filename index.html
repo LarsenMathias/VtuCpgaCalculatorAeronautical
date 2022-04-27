@@ -45,31 +45,31 @@
             var grade7=2;
             var grade8=2;
             var grade9=1;
-            if (ME>90){
+            if (ME>=90){
                 ME=10;
             }
-            if (Ad>90){
+            if (Ad>=90){
                 Ad=10;
             }
-            if (As>90){
+            if (As>=90){
                 As=10;
             }
-            if (icm>90){
+            if (icm>=90){
                 icm=10;
             }
-            if (asi>90){
+            if (asi>=90){
                 asi=10;
             }
-            if (tov>90){
+            if (tov>=90){
                 tov=10;
             }
-            if (Adlab>90){
+            if (Adlab>=90){
                 Adlab=10;
             }
-            if (ecandfm>90){
+            if (ecandfm>=90){
                 ecandfm=10;
             }
-            if (evs>90){
+            if (evs>=90){
                 evs=10;
             }
             if (ME<90 && ME>=80){
@@ -126,6 +126,47 @@
             if (evs<80 && evs>=70){
                 evs=8;
             }
+            if (ME<70 && ME>=60){
+                ME=7;                
+            }
+            if (Ad<70 && Ad>=60){
+                Ad=7;
+            }
+            if (As<70 && As>=60){
+                As=7;
+            }
+            if (icm<70 && icm>=60){
+                icm=7;
+            }
+            if (asi<70 && asi>=60){
+                asi=7;
+            }
+            if (tov<70 && tov>=60){
+                tov=7;
+            }
+            if (Adlab<70 && Adlab>=60){
+                Adlab=7;
+            }
+            if (ecandfm<70 && ecandfm>=60){
+                ecandfm=7;
+            }
+            if (evs<70 && evs>=60){
+                evs=7;
+            }
+            if (ME<60 && ME>=50){
+                ME=6;
+            }
+            if (Ad<60 && Ad>=50){
+                Ad=6;
+            }
+            if (As<60 && As>=50){
+                As=6;
+            }
+            if (As<60 && As>=50){
+                As=6;
+            }
+
+
             result=(ME*grade1+Ad*grade2+As*grade3+icm*grade4+asi*grade5+tov*grade6+Adlab*grade7+ecandfm*grade8+evs*grade9)/24;
             document.getElementById("result").innerHTML="the cgpa is "+result;
         }
