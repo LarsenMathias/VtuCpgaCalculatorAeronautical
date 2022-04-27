@@ -27,15 +27,15 @@
     </div>
     <script>
         function cgpa(){
-            var ME=document.getElementById("M&E").value
-            var Ad2=document.getElementById("Ad2").value
-            var As=document.getElementById("As-1").value
-            var ICM=document.getElementById("ICM").value
-            var ASI=document.getElementById("AS&I").value
-            var TOV=document.getElementById("TOV").value
-            var AdLab=document.getElementById("AdLab").value
-            var ECandFM=document.getElementById("ECandFM").value
-            var EVS=document.getElementById("EVS").value
+            var ME=document.getElementById("M&E").value;
+            var Ad=document.getElementById("Ad2").value;
+            var As=document.getElementById("As-1").value;
+            var icm=document.getElementById("ICM").value;
+            var asi=document.getElementById("AS&I").value;
+            var tov=document.getElementById("TOV").value;
+            var Adlab=document.getElementById("AdLab").value;
+            var ecandfm=document.getElementById("ECandFM").value;
+            var evs=document.getElementById("EVS").value;
             var grade1=3;
             var grade2=4;
             var grade3=3;
@@ -48,35 +48,58 @@
             if (ME>90){
                 ME=10;
             }
-            if (Ad2>90){
-                Ad2=10;
+            if (Ad>90){
+                Ad=10;
             }
             if (As>90){
                 As=10;
             }
-            if (ICM>90){
-                ICM=10;
+            if (icm>90){
+                icm=10;
             }
-            if (ASI>90){
-                ASI=10;
+            if (asi>90){
+                asi=10;
             }
-            if (TOV>90){
-                TOV=10;
+            if (tov>90){
+                tov=10;
             }
-            if (AdLab>90){
-                AdLab=10;
+            if (Adlab>90){
+                Adlab=10;
             }
-            if (ECandFM>90){
-                ECandFM=10;
+            if (ecandfm>90){
+                ecandfm=10;
             }
-            if (EVS>90){
-                EVS=10;
+            if (evs>90){
+                evs=10;
             }
             if (ME<90 && ME>=80){
                 ME=9;
             }
-            if (ME)
-            result=(ME*grade1+Ad2*grade2+As*grade3+ICM*grade4+ASI*grade5+TOV*grade6+AdLab*grade7+ECandFM*grade8+EVS*grade9)/24;
+            if (Ad<90 && Ad>=80){
+                Ad=9;
+            }
+            if (As<90 && As>=80){
+                As=9;
+            }
+            if (icm<90 && icm>=80){
+                icm=9;
+            }
+            if (asi<90 && asi>=80){
+                asi=9;
+            }
+            if (tov<90 && tov>=80){
+                tov=9;
+            }
+            if (Adlab<90 && Adlab>=80){
+                Adlab=9;
+            }
+            if (ecandfm<90 && ecandfm>=80){
+                ecandfm=9;
+            }
+            if (evs<90 && evs>=80){
+                evs=9;
+            }
+            result=(ME*grade1+Ad*grade2+As*grade3+icm*grade4+asi*grade5+tov*grade6+Adlab*grade7+ecandfm*grade8+evs*grade9)/24;
             document.getElementById("result").innerHTML="the cgpa is "+result;
         }
     </script>
