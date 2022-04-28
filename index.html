@@ -162,9 +162,6 @@
             if (As<60 && As>=50){
                 As=6;
             }
-            if (As<60 && As>=50){
-                As=6;
-            }
             if (icm<60 && icm>=50){
                 icm=6;
             }
@@ -183,8 +180,87 @@
             if (evs<60 && evs>=50){
                 evs=6;
             }
-
-
+            if (ME<50 && ME>=45){
+                ME=5;
+            }
+            if (Ad<50 && Ad>=45){
+                Ad=5;
+            }
+            if (As<50 && As>=45){
+                As=5;
+            }
+            if (icm<50 && icm>=45){
+                As=5;
+            }
+            if (asi<50 && asi>=45){
+                asi=5;
+            }
+            if (tov<50 && tov>=45){
+                tov=5;
+            }
+            if (Adlab<50 && Adlab>=45){
+                Adlab=5;
+            }
+            if (ecandfm<50 && ecandfm>=45){
+                ecandfm=5;
+            }
+            if (evs<50 && evs>=45){
+                evs=5;
+            }
+            if (ME<45 && ME>=40){
+                ME=4;
+            }
+            if (Ad<45 && Ad>=40){
+                Ad=4;
+            }
+            if (As<45 && As>=40){
+                Ad=4;
+            }
+            if (icm<45 && icm>=40){
+                icm=4;
+            }
+            if (asi<45 && asi>=40){
+                asi=4;
+            }
+            if (tov<45 && tov>=40){
+                tov=4;
+            }
+            if (Adlab<45 && Adlab>=40){
+                Adlab=4;
+            }
+            if (ecandfm<45 && ecandfm>=40){
+                ecandfm=4;
+            }
+            if (evs<45 && evs>=40){
+                evs=4;
+            }
+            if (ME<40){
+                ME=0;
+            }
+            if (Ad<40){
+                Ad=0;
+            }
+            if (As<40){
+                As=0;
+            }
+            if (icm<40){
+                icm=0;
+            }
+            if (asi<40){
+                asi=0;
+            }
+            if (tov<40){
+                tov=0;
+            }
+            if (Adlab<40){
+                Adlab=0;
+            }
+            if (ecandfm<40){
+                ecandfm=0;
+            }
+            if (evs<40){
+                evs=0;
+            }
             result=(ME*grade1+Ad*grade2+As*grade3+icm*grade4+asi*grade5+tov*grade6+Adlab*grade7+ecandfm*grade8+evs*grade9)/24;
             document.getElementById("result").innerHTML="the cgpa is "+result;
         }
