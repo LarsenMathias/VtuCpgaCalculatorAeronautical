@@ -234,34 +234,34 @@
             if (evs<45 && evs>=40){
                 evs=4;
             }
-            if (ME<40){
-                ME=0;
-            }
-            if (Ad<40){
-                Ad=0;
-            }
-            if (As<40){
-                As=0;
-            }
-            if (icm<40){
-                icm=0;
-            }
-            if (asi<40){
-                asi=0;
-            }
-            if (tov<40){
-                tov=0;
-            }
-            if (Adlab<40){
-                Adlab=0;
-            }
-            if (ecandfm<40){
-                ecandfm=0;
-            }
-            if (evs<40){
-                evs=0;
-            }
-            result=(ME*grade1+Ad*grade2+As*grade3+icm*grade4+asi*grade5+tov*grade6+Adlab*grade7+ecandfm*grade8+evs*grade9)/24;
+            // if (ME<40 && ME>=0){
+            //     ME=0;
+            // }
+            // if (Ad<40 && Ad>=0){
+            //     Ad=0;
+            // }
+            // if (As<40 && As>=0){
+            //     As=0;
+            // }
+            // if (icm<40 && icm>=0){
+            //     icm=0;
+            // }
+            // if (asi<40 && asi>=0){
+            //     asi=0;
+            // }
+            // if (tov<40 && tov>=0){
+            //     tov=0;
+            // }
+            // if (Adlab<40 && Adlab>=0){
+            //     Adlab=0;
+            // }
+            // if (ecandfm<40 && ecandfm>=0){
+            //     ecandfm=0;
+            // }
+            // if (evs<40 && evs>=0){
+            //     evs=0;
+            // }
+            result=(ME*grade1+Ad*grade2+As*grade3+icm*grade4+asi*grade5+tov*grade6+Adlab*grade7+ecandfm*grade8+evs*grade9)/(grade1+grade2+grade3+grade4+grade5+grade6+grade7+grade8+grade9);
             document.getElementById("result").innerHTML="the cgpa is "+result;
         }
     </script>

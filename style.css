@@ -6,3 +6,12 @@ a{
     background-color: #d7385c;
     color: #fff;
 }
+.inputarea{
+    color: #9ACD32;
+    padding: 50;
+}
+.content{
+    padding: 50px;
+    justify-content: center;
+    text-align: center;
+}
