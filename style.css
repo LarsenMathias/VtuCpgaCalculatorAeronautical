@@ -30,3 +30,7 @@ body{
     text-decoration: solid;
     text-size-adjust: 100px;
 }
+*{
+    box-sizing: border-box;
+  padding: 15px;
+}
