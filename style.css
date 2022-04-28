@@ -3,15 +3,30 @@ a{
     font-size: 50px;
     font-weight: bold;
     text-decoration: none;
-    background-color: #d7385c;
-    color: #fff;
+    background-color:  #9ACD32;
+    color: #556B2F;
 }
 .inputarea{
     color: #9ACD32;
     padding: 50;
+    background-color: #6B8E23;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 .content{
     padding: 50px;
     justify-content: center;
     text-align: center;
+    background-color: #9ACD32;
+}
+.container{
+    background-color: #9ACD32;
+}
+body{
+    background-color:#9ACD32 ;
+}
+#result{
+    color: #556B2F;
+    text-decoration: solid;
+    text-size-adjust: 100px;
 }
