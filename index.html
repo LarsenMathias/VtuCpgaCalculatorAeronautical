@@ -37,6 +37,9 @@
             var Adlab=document.getElementById("AdLab").value;
             var ecandfm=document.getElementById("ECandFM").value;
             var evs=document.getElementById("EVS").value;
+            
+            var MEpoint=0,Adpoint=0,Aspoint=0,icmpoint=0,asipoint=0,tovpoint=0,Adlabpoint=0,ecandfmpoint=0,evspoint=0;
+            
             var grade1=3;
             var grade2=4;
             var grade3=3;
@@ -46,223 +49,224 @@
             var grade7=2;
             var grade8=2;
             var grade9=1;
+            
             if (ME>=90){
-                ME=10;
+                MEpoint=10;
             }
             if (Ad>=90){
-                Ad=10;
+                Adpoint=10;
             }
             if (As>=90){
-                As=10;
+                Aspoint=10;
             }
             if (icm>=90){
                 icm=10;
             }
             if (asi>=90){
-                asi=10;
+                asipoint=10;
             }
             if (tov>=90){
-                tov=10;
+                tovpoint=10;
             }
             if (Adlab>=90){
-                Adlab=10;
+                Adlabpoint=10;
             }
             if (ecandfm>=90){
-                ecandfm=10;
+                ecandfmpoint=10;
             }
             if (evs>=90){
-                evs=10;
+                evspoint=10;
             }
             if (ME<90 && ME>=80){
-                ME=9;
+                MEpoint=9;
             }
             if (Ad<90 && Ad>=80){
-                Ad=9;
+                Adpoint=9;
             }
             if (As<90 && As>=80){
-                As=9;
+                Aspoint=9;
             }
             if (icm<90 && icm>=80){
-                icm=9;
+                icmpoint=9;
             }
             if (asi<90 && asi>=80){
-                asi=9;
+                asipoint=9;
             }
             if (tov<90 && tov>=80){
-                tov=9;
+                tovpoint=9;
             }
             if (Adlab<90 && Adlab>=80){
-                Adlab=9;
+                Adlabpoint=9;
             }
             if (ecandfm<90 && ecandfm>=80){
-                ecandfm=9;
+                ecandfmpoint=9;
             }
             if (evs<90 && evs>=80){
-                evs=9;
+                evspoint=9;
             }
             if (ME<80 && ME>=70){
-                ME=8;
+                MEpoint=8;
             }
             if (Ad<80 && Ad>=70){
-                Ad=8;
+                Adpoint=8;
             }
             if (As<80 && As>=70){
-                As=8;
+                Aspoint=8;
             }
             if (icm<80 && icm>=70){
-                icm=8;
+                icmpoint=8;
             }
             if (asi<80 && asi>=70){
-                asi=8;
+                asipoint=8;
             }
             if (tov<80 && tov>=70){
-                tov=8;
+                tovpoint=8;
             }
             if (Adlab<80 && Adlab>=70){
-                Adlab=8;
+                Adlabpoint=8;
             }
             if (ecandfm<80 && ecandfm>=70){
-                ecandfm=8;
+                ecandfmpoint=8;
             }
             if (evs<80 && evs>=70){
-                evs=8;
+                evspoint=8;
             }
             if (ME<70 && ME>=60){
-                ME=7;                
+                MEpoint=7;                
             }
             if (Ad<70 && Ad>=60){
-                Ad=7;
+                Adpoint=7;
             }
             if (As<70 && As>=60){
-                As=7;
+                Aspoint=7;
             }
             if (icm<70 && icm>=60){
-                icm=7;
+                icmpoint=7;
             }
             if (asi<70 && asi>=60){
-                asi=7;
+                asipoint=7;
             }
             if (tov<70 && tov>=60){
-                tov=7;
+                tovpoint=7;
             }
             if (Adlab<70 && Adlab>=60){
-                Adlab=7;
+                Adlabpoint=7;
             }
             if (ecandfm<70 && ecandfm>=60){
-                ecandfm=7;
+                ecandfmpoint=7;
             }
             if (evs<70 && evs>=60){
-                evs=7;
+                evspoint=7;
             }
             if (ME<60 && ME>=50){
-                ME=6;
+                MEpoint=6;
             }
             if (Ad<60 && Ad>=50){
-                Ad=6;
+                Adpoint=6;
             }
             if (As<60 && As>=50){
-                As=6;
+                Aspoint=6;
             }
             if (icm<60 && icm>=50){
-                icm=6;
+                icmpoint=6;
             }
             if (asi<60 && asi>=50){
-                asi=6;
+                asipoint=6;
             }
             if (tov<60 && tov>=50){
-                tov=6;
+                tovpoint=6;
             }
             if (Adlab<60 && Adlab>=50){
-                Adlab=6;
+                Adlabpoint=6;
             }
             if (ecandfm<60 && ecandfm>=50){
-                ecandfm=6;
+                ecandfmpoint=6;
             }
             if (evs<60 && evs>=50){
-                evs=6;
+                evspoint=6;
             }
             if (ME<50 && ME>=45){
-                ME=5;
+                MEpoint=5;
             }
             if (Ad<50 && Ad>=45){
-                Ad=5;
+                Adpoint=5;
             }
             if (As<50 && As>=45){
-                As=5;
+                Aspoint=5;
             }
             if (icm<50 && icm>=45){
-                icm=5;
+                icmpoint=5;
             }
             if (asi<50 && asi>=45){
-                asi=5;
+                asipoint=5;
             }
             if (tov<50 && tov>=45){
-                tov=5;
+                tovpoint=5;
             }
             if (Adlab<50 && Adlab>=45){
-                Adlab=5;
+                Adlabpoint=5;
             }
             if (ecandfm<50 && ecandfm>=45){
-                ecandfm=5;
+                ecandfmpoint=5;
             }
             if (evs<50 && evs>=45){
-                evs=5;
+                evspoint=5;
             }
             if (ME<45 && ME>=40){
-                ME=4;
+                MEpoint=4;
             }
             if (Ad<45 && Ad>=40){
-                Ad=4;
+                Adpoint=4;
             }
             if (As<45 && As>=40){
-                As=4;
+                Aspoint=4;
             }
             if (icm<45 && icm>=40){
-                icm=4;
+                icmpoint=4;
             }
             if (asi<45 && asi>=40){
-                asi=4;
+                asipoint=4;
             }
             if (tov<45 && tov>=40){
-                tov=4;
+                tovpoint=4;
             }
             if (Adlab<45 && Adlab>=40){
-                Adlab=4;
+                Adlabpoint=4;
             }
             if (ecandfm<45 && ecandfm>=40){
-                ecandfm=4;
+                ecandfmpoint=4;
             }
             if (evs<45 && evs>=40){
-                evs=4;
+                evspoint=4;
             }
-            // if (ME<40 && ME>=0){
-            //     ME=0;
-            // }
-            // if (Ad<40 && Ad>=0){
-            //     Ad=0;
-            // }
-            // if (As<40 && As>=0){
-            //     As=0;
-            // }
-            // if (icm<40 && icm>=0){
-            //     icm=0;
-            // }
-            // if (asi<40 && asi>=0){
-            //     asi=0;
-            // }
-            // if (tov<40 && tov>=0){
-            //     tov=0;
-            // }
-            // if (Adlab<40 && Adlab>=0){
-            //     Adlab=0;
-            // }
-            // if (ecandfm<40 && ecandfm>=0){
-            //     ecandfm=0;
-            // }
-            // if (evs<40 && evs>=0){
-            //     evs=0;
-            // }
-            result=(ME*grade1+Ad*grade2+As*grade3+icm*grade4+asi*grade5+tov*grade6+Adlab*grade7+ecandfm*grade8+evs*grade9)/(grade1+grade2+grade3+grade4+grade5+grade6+grade7+grade8+grade9);
+            if (ME<40 && ME>=0){
+                MEpoint=0;
+            }
+            if (Ad<40 && Ad>=0){
+                Adpoint=0;
+            }
+            if (As<40 && As>=0){
+                Aspoint=0;
+            }
+            if (icm<40 && icm>=0){
+                icmpoint=0;
+            }
+            if (asi<40 && asi>=0){
+                asipoint=0;
+            }
+            if (tov<40 && tov>=0){
+                tovpoint=0;
+            }
+            if (Adlab<40 && Adlab>=0){
+                Adlab=0;
+            }
+            if (ecandfm<40 && ecandfm>=0){
+                ecandfmpoint=0;
+            }
+            if (evs<40 && evs>=0){
+                evspoint=0;
+            }
+            result=(MEpoint*grade1+Adpoint*grade2+Aspoint*grade3+icmpoint*grade4+asipoint*grade5+tovpoint*grade6+Adlabpoint*grade7+ecandfmpoint*grade8+evspoint*grade9)/(grade1+grade2+grade3+grade4+grade5+grade6+grade7+grade8+grade9);
             document.getElementById("result").innerHTML="The Cgpa is "+result;
         }
     </script>
